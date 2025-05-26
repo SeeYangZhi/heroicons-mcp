@@ -12,12 +12,12 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 
 import { createMcpServer } from "./utils.js";
 
-async function main() {
+/**
+ * Initializes and starts the MCP server with StdioTransport.
+ * This function is exported to be callable from other modules (e.g., cli.ts).
+ */
+export async function runStdioServer() {
   const server = createMcpServer();
   const transport = new StdioServerTransport();
   await server.connect(transport);
 }
-
-main().catch(() => {
-  process.exit(1);
-});

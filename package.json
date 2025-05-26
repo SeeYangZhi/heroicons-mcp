@@ -1,17 +1,25 @@
 {
   "name": "heroicons-mcp",
   "description": "This project, heroicons-mcp, is a Model Context Protocol (MCP) server built with Bun and the MCP TypeScript SDK. It exposes Heroicons as resources and tools, enabling LLMs and agentic applications to search for and utilize icons. Key features include listing icons, icon search by name or category and integration capabilities with MCP clients like Claude Desktop.",
+  "version": "0.1.0",
   "type": "module",
-  "private": true,
+  "private": false,
   "files": [
-    "build"
+    "build",
+    "README.md"
   ],
   "bin": {
-    "heroicons": "./build/index.js"
+    "heroicons-mcp": "build/cli.js"
+  },
+  "engines": {
+    "node": ">=22.16.0"
   },
   "scripts": {
-    "start": "bun run src/http.ts",
-    "build": "tsc && chmod 755 build/index.js",
+    "dev": "bun run src/entry.ts",
+    "dev:stdio": "bun run src/entry.ts --stdio",
+    "start": "bun run build/entry.js",
+    "start:stdio": "bun run build/entry.js --stdio",
+    "build": "tsc && chmod 755 build/entry.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky"
@@ -39,5 +47,17 @@
   },
   "peerDependencies": {
     "typescript": "^5.8.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seeyangzhi/heroicons-mcp.git"
+  },
+  "keywords": [
+    "heroicons",
+    "mcp",
+    "typescript",
+    "ai"
+  ],
+  "author": "See Yang Zhi",
+  "license": "MIT"
 }

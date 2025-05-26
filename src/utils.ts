@@ -108,7 +108,7 @@ export const iconMeta = [
 export function createMcpServer(): McpServer {
   const server = new McpServer({
     name: "Heroicons MCP Server",
-    version: "1.0.0"
+    version: "0.1.0"
   });
 
   // Tool: search_icons
@@ -181,16 +181,25 @@ export function createMcpServer(): McpServer {
   // Tool: list_all_icons
   server.tool(
     "list_all_icons",
-    "List all icons from the heroicons library",
-    {},
-    async () => {
+    "List all icons from the heroicons library, optionally filtered by style",
+    {
+      style: z
+        .enum(["solid", "outline"])
+        .optional()
+        .describe("Icon style: solid or outline (optional)")
+    },
+    async ({ style }) => {
       // Limit to 1000 icons for safety
-      const results = iconMeta.slice(0, 1000).map((icon) => icon.name);
+      let results = iconMeta;
+      if (style) {
+        results = results.filter((icon) => icon.style === style);
+      }
+      const names = results.slice(0, 1000).map((icon) => icon.name);
       return {
         content: [
           {
             type: "text",
-            text: JSON.stringify(results, null, 2)
+            text: JSON.stringify(names, null, 2)
           }
         ]
       };
