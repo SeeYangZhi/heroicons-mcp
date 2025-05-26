@@ -63,7 +63,7 @@ bun run index.ts
 
 ## Testing MCP Locally with Inspector
 
-You can test your MCP server locally using the [MCP Inspector](https://github.com/modelcontextprotocol/inspector), an interactive tool for debugging and verifying MCP servers.
+You can test the MCP server locally using the [MCP Inspector](https://github.com/modelcontextprotocol/inspector), an interactive tool for debugging and verifying MCP servers.
 
 First, build the project:
 
@@ -106,6 +106,14 @@ To use this MCP server in [Claude Desktop](https://www.anthropic.com/claude-desk
    Replace `/ABSOLUTE/PATH/TO/heroicons-mcp/build/index.js` with the actual absolute path to your built server file.
 4. Save the file and restart Claude Desktop.
 5. You should now see the "heroicons" server available in Claude's tools panel.
+
+## Running Your Server using Streamable HTTP
+
+1. To run the server, use the following command:
+
+```bash
+bun run start
+```
 
 ## Resources
 
