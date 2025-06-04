@@ -108,7 +108,7 @@ export const iconMeta = [
 export function createMcpServer(): McpServer {
   const server = new McpServer({
     name: "Heroicons MCP Server",
-    version: "0.1.0"
+    version: "0.2.0"
   });
 
   // Tool: search_icons

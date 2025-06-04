@@ -1,7 +1,7 @@
 {
   "name": "heroicons-mcp",
   "description": "This project, heroicons-mcp, is a Model Context Protocol (MCP) server built with Bun and the MCP TypeScript SDK. It exposes Heroicons as resources and tools, enabling LLMs and agentic applications to search for and utilize icons. Key features include listing icons, icon search by name or category and integration capabilities with MCP clients like Claude Desktop.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "private": false,
   "files": [
