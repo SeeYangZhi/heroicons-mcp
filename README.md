@@ -1,5 +1,9 @@
 # heroicons-mcp
 
+<a href="https://glama.ai/mcp/servers/@SeeYangZhi/heroicons-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@SeeYangZhi/heroicons-mcp/badge" />
+</a>
+
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server exposing [Heroicons](https://heroicons.com/) as resources and tools for LLMs and agentic applications. Built with Bun and the MCP TypeScript SDK.
 
 ## What is Heroicons?

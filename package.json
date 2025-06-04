@@ -9,7 +9,7 @@
     "README.md"
   ],
   "bin": {
-    "heroicons-mcp": "build/cli.js"
+    "heroicons-mcp": "build/entry.js"
   },
   "engines": {
     "node": ">=22.16.0"
