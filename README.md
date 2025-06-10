@@ -1,5 +1,7 @@
 # heroicons-mcp
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/seeyangzhi/heroicons-mcp)
+
 <a href="https://glama.ai/mcp/servers/@SeeYangZhi/heroicons-mcp">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@SeeYangZhi/heroicons-mcp/badge" />
 </a>
