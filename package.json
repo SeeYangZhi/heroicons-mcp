@@ -31,19 +31,19 @@
     "zod": "^3.25.28"
   },
   "devDependencies": {
-    "@eslint/js": "^9.27.0",
+    "@eslint/js": "9.39.5",
     "@types/bun": "latest",
-    "@types/express": "^5.0.2",
+    "@types/express": "5.0.6",
     "@types/node": "22.15.21",
-    "eslint": "^9.27.0",
-    "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-prettier": "^5.4.0",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-unused-imports": "^4.1.4",
+    "eslint": "9.39.5",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-prettier": "5.5.6",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "eslint-plugin-unused-imports": "4.4.1",
     "husky": "9.1.7",
-    "prettier": "^3.5.3",
-    "typescript-eslint": "^8.32.1"
+    "prettier": "3.9.6",
+    "typescript-eslint": "8.70.0"
   },
   "peerDependencies": {
     "typescript": "^5.8.3"
